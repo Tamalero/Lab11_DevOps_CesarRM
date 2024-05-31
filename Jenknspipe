@@ -16,9 +16,11 @@ pipeline{
             }
         } 
 
-        stage('Testing'){
+         stage('Production'){
             steps{
             sh 'firebase deploy -P DevOps11-CesarRM  --token "$FIREBASE_DEPLOY_TOKEN"'
             }
         }
+    }
 }
+          
