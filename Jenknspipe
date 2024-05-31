@@ -20,7 +20,7 @@ pipeline{
          stage('Production'){
             steps{
             echo "Starting Deploy"
-            sh 'firebase deploy -P DevOps11-CesarRM  --token "$FIREBASE_DEPLOY_TOKEN"'
+            sh 'firebase deploy -P devops11-cesarrm  --token "$FIREBASE_DEPLOY_TOKEN"'
             }
         }
     }
